@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.name {
+  display: flex;
+  transition: all ease-in-out 0.5s;
+  width: 35vw;
+}
+
+.moving {
+  transform: translateX(-130px);
+  z-index: -1;
+  transition: all ease-in-out 0.2s;
+}
+
+.name:hover .moving {
+  transform: translateX(-30px);
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  background-color: white;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
